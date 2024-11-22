@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: dim_user
+    columns:
+      - name: employee_id
+        tests:
+          - unique:
+              config:
+                store_failures: false
+          - not_null:
+              config:
+                store_failures: true
